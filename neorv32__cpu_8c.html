@@ -100,8 +100,8 @@ Functions</h2></td></tr>
 <tr class="separator:a5c3cf52498abb3cf3c14a724b287ecf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9d7e66d338a86207c4a510dc4d913874"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="neorv32__cpu_8c.html#a9d7e66d338a86207c4a510dc4d913874">neorv32_cpu_get_systime</a> (void)</td></tr>
 <tr class="separator:a9d7e66d338a86207c4a510dc4d913874"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa9027535b13d9f9325e734997fc4a137"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="neorv32__cpu_8c.html#aa9027535b13d9f9325e734997fc4a137">neorv32_cpu_delay_ms</a> (uint32_t time_ms)</td></tr>
-<tr class="separator:aa9027535b13d9f9325e734997fc4a137"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5662c78b9ce6e31d87a2a0a8c02d8fb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="neorv32__cpu_8c.html#aa5662c78b9ce6e31d87a2a0a8c02d8fb">neorv32_cpu_delay_ms</a> (int16_t time_ms)</td></tr>
+<tr class="separator:aa5662c78b9ce6e31d87a2a0a8c02d8fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aca49efb45d3808ad76cf65ba291f546d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="neorv32__cpu_8c.html#aca49efb45d3808ad76cf65ba291f546d">neorv32_cpu_goto_user_mode</a> (void)</td></tr>
 <tr class="separator:aca49efb45d3808ad76cf65ba291f546d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a223a5310e26238277d63dc48d7dbd63a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="neorv32__cpu_8c.html#a223a5310e26238277d63dc48d7dbd63a">neorv32_cpu_atomic_cas</a> (uint32_t addr, uint32_t expected, uint32_t desired)</td></tr>
@@ -309,8 +309,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="aa9027535b13d9f9325e734997fc4a137"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa9027535b13d9f9325e734997fc4a137">&#9670;&nbsp;</a></span>neorv32_cpu_delay_ms()</h2>
+<a id="aa5662c78b9ce6e31d87a2a0a8c02d8fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa5662c78b9ce6e31d87a2a0a8c02d8fb">&#9670;&nbsp;</a></span>neorv32_cpu_delay_ms()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -318,17 +318,17 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void neorv32_cpu_delay_ms </td>
           <td>(</td>
-          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramtype">int16_t&#160;</td>
           <td class="paramname"><em>time_ms</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Simple delay function using busy wait.</p>
-<dl class="section warning"><dt>Warning</dt><dd>This function requires the cycle[h] CSR(s). Hence, the Zicsr extension is mandatory.</dd></dl>
+<p>Simple delay function using busy wait (simple loop).</p>
+<dl class="section warning"><dt>Warning</dt><dd>This function is not really precise (especially if there is no M extension available)! Use a timer-based approach (using cycle or time CSRs) for precise timings.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">time_ms</td><td>Time in ms to wait. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">time_ms</td><td>Time in ms to wait (max 32767ms). </td></tr>
   </table>
   </dd>
 </dl>

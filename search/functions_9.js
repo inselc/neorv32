@@ -8,7 +8,7 @@ var searchData=
   ['neorv32_5fcpu_5fbreakpoint_1284',['neorv32_cpu_breakpoint',['../neorv32__cpu_8h.html#a386919a8b7f37c2c37d2561bfb79d1ff',1,'neorv32_cpu.h']]],
   ['neorv32_5fcpu_5fcsr_5fread_1285',['neorv32_cpu_csr_read',['../neorv32__cpu_8h.html#aab7a9f9cf608599f2b124dd499cb8418',1,'neorv32_cpu.h']]],
   ['neorv32_5fcpu_5fcsr_5fwrite_1286',['neorv32_cpu_csr_write',['../neorv32__cpu_8h.html#afb5ef6e0b1a3e26570edfd8379490455',1,'neorv32_cpu.h']]],
-  ['neorv32_5fcpu_5fdelay_5fms_1287',['neorv32_cpu_delay_ms',['../neorv32__cpu_8c.html#aa9027535b13d9f9325e734997fc4a137',1,'neorv32_cpu_delay_ms(uint32_t time_ms):&#160;neorv32_cpu.c'],['../neorv32__cpu_8h.html#aa9027535b13d9f9325e734997fc4a137',1,'neorv32_cpu_delay_ms(uint32_t time_ms):&#160;neorv32_cpu.c']]],
+  ['neorv32_5fcpu_5fdelay_5fms_1287',['neorv32_cpu_delay_ms',['../neorv32__cpu_8c.html#aa5662c78b9ce6e31d87a2a0a8c02d8fb',1,'neorv32_cpu_delay_ms(int16_t time_ms):&#160;neorv32_cpu.c'],['../neorv32__cpu_8h.html#aa5662c78b9ce6e31d87a2a0a8c02d8fb',1,'neorv32_cpu_delay_ms(int16_t time_ms):&#160;neorv32_cpu.c']]],
   ['neorv32_5fcpu_5fdint_1288',['neorv32_cpu_dint',['../neorv32__cpu_8h.html#a3e710118af168dad99d93ddd5940d43e',1,'neorv32_cpu.h']]],
   ['neorv32_5fcpu_5feint_1289',['neorv32_cpu_eint',['../neorv32__cpu_8h.html#ae00d513794932373f6dd2766d7efb4e1',1,'neorv32_cpu.h']]],
   ['neorv32_5fcpu_5fenv_5fcall_1290',['neorv32_cpu_env_call',['../neorv32__cpu_8h.html#a08a68d64b34162c5979a77bbb3c52bb6',1,'neorv32_cpu.h']]],
